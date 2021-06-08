@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Canvas</title>
+        <link rel="stylesheet" href="fff.css">
+</head>
+<body>
+	<canvas id="smile" width="500" height="500">Your browser doesn't support the HTML5 canvas tag</canvas>
+	<script>
+   var canvas = document.getElementById('smile');
+   var ctx = canvas.getContext('2d');
+
+	ctx.beginPath();
+	ctx.moveTo(25,25);
+	ctx.lineTo(400,25);
+	ctx.lineTo(400,400);
+	ctx.lineTo(25,400);
+	ctx.closePath();
+	ctx.strokeStyle = 'black';
+	ctx.lineWidth = 30; 
+ctx.stroke();
+  
+	ctx.beginPath();
+	ctx.moveTo(45,45);
+	ctx.lineTo(380,45);	
+	ctx.lineTo(380,380);
+	ctx.lineTo(45,380);	
+	ctx.closePath();
+	ctx.strokeStyle = '#00bfff';
+	ctx.lineWidth = 20; 
+ctx.stroke();	
+	
+	ctx.beginPath();
+	ctx.moveTo(65,65);
+	ctx.lineTo(360,65);	
+	ctx.lineTo(360,360);
+	ctx.lineTo(65,360);	
+	ctx.closePath();
+	ctx.strokeStyle = 'blue';
+	ctx.lineWidth = 20; 
+ctx.stroke();
+
+	ctx.beginPath();
+	ctx.moveTo(85,85);
+	ctx.lineTo(340,85);	
+	ctx.lineTo(340,340);
+	ctx.lineTo(85,340);	
+	ctx.closePath();
+	ctx.strokeStyle = 'red';
+	ctx.lineWidth = 20; 
+ctx.stroke();
+</script>
+</body>
+</html>
